@@ -1,0 +1,8 @@
+Options -Indexes
+
+ErrorDocument 400 https://cat2.link/error.php?error=400
+ErrorDocument 401 https://cat2.link/error.php?error=401
+ErrorDocument 403 https://cat2.link/error.php?error=403
+ErrorDocument 404 https://cat2.link/error.php?error=404
+ErrorDocument 500 https://cat2.link/error.php?error=500
+ErrorDocument 503 https://cat2.link/error.php?error=503

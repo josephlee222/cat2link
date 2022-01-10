@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>BMI Calculator</title>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<div>
+			<h1>BMI Calculator</h1>
+			<img id="bmi_img" src="bmi.jpg" alt="BMI Chart">
+			<form action="javascript:calBmi()">
+				<table class="center">
+					<tr>
+						<td class="row-title" label for="weight">Weight in Kilogrammes</label></td>
+						<td class="row-inputs"><input style="width:100%" id="weight" type="text" required></td>
+					</tr>
+					<tr>
+						<td class="row-title"><label for="height">Height in Metres</label></td>
+						<td class="row-inputs"><input style="width:100%" id="height" type="text" required></td>
+					</tr>
+					<tr id="calRow">
+						<td colspan="2" class="row-inputs"><button type="reset" id="resetBtn">Reset</button><button type="submit" id="calBtn">Calculate</button></td>
+					</tr>
+					<tr>
+						<td class="row-title">BMI</td>
+						<td class="row-inputs"><p id="bmi"></p></td>
+					</tr>
+					<tr>
+						<td class="row-title">Result</td>
+						<td class="row-inputs" id="result_data"><p id="result"></p></td>
+					</tr>
+				</table>
+			</form>
+			
+			<table class="center">
+				<tr>
+					<td class="row-title">No.</td>
+					<td class="row-title">Condition</td>
+					<td class="row-title">Result</td>
+				</tr>
+				<tr class="row-inputs">
+					<td>1</td>
+					<td>When BMI <= 18.5</td>
+					<td>Result = You are underweight</td>
+				</tr>
+				<tr class="row-inputs">
+					<td>2</td>
+					<td>When BMI > 18.5 AND <= 25.0</td>
+					<td>Result = You are of normal range</td>
+				</tr>
+				<tr class="row-inputs">
+					<td>3</td>
+					<td>When BMI > 25.0</td>
+					<td>Result = You are overweight</td>
+				</tr>
+			</table>
+		</div>
+		<script src="pa2.js" type="text/javascript"></script>
+	</body>
+</html>

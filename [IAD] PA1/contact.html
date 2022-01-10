@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Information Development - Contact</title>
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="page-paddings">
+        <!--Navbar and logo-->
+        <div class="logo-div">
+            <img src="./media/logo.jpeg" class="logo">
+            <h4 class="ml-8 logo-text">ITE Information Development Department</h4>
+        </div>
+
+        <nav class="navigation">
+            <a class="ml-16 nav-link" onclick="toPage('./index.html')">Home</a>
+            <a class="nav-link" onclick="toPage('./introduction.html')">Introduction</a>
+            <a class="nav-link" onclick="toPage('./schedule.html')">Schedule</a>
+            <a class="nav-link active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="page-paddings content">
+        <section class="introductions-banner card">
+            <h1>Contact Us</h1>
+            <p>Enquire and locate us</p>
+        </section>
+
+        <section class="contacts">
+            <aside class="card contact-card mr-8">
+                <h3>Contact methods</h3>
+                <p>Email: enquires@ite.edu.sg<br>Phone: +65 6857 6578<br><br>Address:<br>2 Ang Mo Kio Drive, Singapore 567720</p>
+                <div class="btn-group">
+                    <button class="site-button">Call Us</button>
+                    <button class="site-button">Email Us</button>
+                </div>
+            </aside>
+            <aside class="card contact-card ml-8">
+                <h3>Locality Map</h3>
+                <!--img class="g-maps" src="./media/location.png"-->
+                <div class="g-maps"><iframe id="g-maps" src="https://maps.google.com/maps?q=ITE%20Collage%20Central&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe></div>
+            </aside>
+        </section>
+    </div>
+
+    <footer>
+        Code by Joseph Lee<br>Painfully coded with CSS & jQuery
+    </footer>
+</body>
+
+</html>

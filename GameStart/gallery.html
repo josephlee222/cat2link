@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gamestart - E-Shop</title>
+    <meta name="description" content="Welcome to GameStart - Buy your favourite games here">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Stylesheet-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky-top bg-gray shadow">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md navbar-warning navbar-dark bg-gray">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html"><img src="./img/logo.png" alt="GameStart logo"></a>
+                <button data-toggle="collapse" data-target=".navigation" class="navbar-toggler"><span class="material-icons icon-btn mr-1 mx-auto d-flex align-self-center">menu</span></button>
+                <div class="collapse navbar-collapse navigation" id="navbar-div">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary mr-1 nav-btn"><span class="material-icons icon-btn mr-1">login</span>Login</button>
+                    <a class="btn btn-primary nav-btn" href="./registration.html"><span class="material-icons icon-btn mr-1">person_add</span>Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1>Game Store</h1>
+            <p>Browse and purchase our collection of games</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 margin-bottom-lg">
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center shadow">
+                        <h6 class="no-text-margin card-header-icon"><span class="material-icons header-icon mr-1">search</span>Search by title</h6>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group no-text-margin">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <small class="text-muted">Press "Enter" to start search</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-lg-12 no-padding-x category-sort">
+                            <div class="card card-sort mb-3">
+                                <div class="card-header d-flex align-items-center shadow">
+                                    <h6 class="no-text-margin card-header-icon"><span class="material-icons header-icon mr-1">category</span>Sort by console</h6>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="badge badge-primary">PS4</a>
+                                    <a href="#" class="badge badge-primary">PS3</a>
+                                    <a href="#" class="badge badge-warning">PC Platforms</a>
+                                    <a href="#" class="badge badge-danger">Nintendo Switch</a>
+                                    <a href="#" class="badge badge-success">Xbox One</a>
+                                    <a href="#" class="badge badge-success">Xbox 360</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-12 no-padding-x age-sort">
+                            <div class="card card-sort">
+                                <div class="card-header d-flex align-items-center shadow">
+                                    <h6 class="no-text-margin card-header-icon"><span class="material-icons header-icon mr-1">grading</span>Sort by age</h6>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="badge badge-success">+3</a>
+                                    <a href="#" class="badge badge-success">+7</a>
+                                    <a href="#" class="badge badge-warning">+12</a>
+                                    <a href="#" class="badge badge-warning">+16</a>
+                                    <a href="#" class="badge badge-danger">+18</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h6 class="no-text-margin card-header-icon"><span class="material-icons header-icon mr-1">games</span>Game titles</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_1.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Factorio</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-warning mb-3 mr-1">PC Platforms</span><span class="badge badge-warning mb-3">+12</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$26.00</del> <span class="ml-2 badge badge-danger">$20.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_2.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Attack On Titan 2</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-danger mb-3 mr-1">Nintendo Switch</span><span class="badge badge-danger mb-3">+18</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$79.95</del> <span class="ml-2 badge badge-danger">$59.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_5.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">51 Clubhouse Games</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-danger mb-3 mr-1">Nintendo Switch</span><span class="badge badge-warning mb-3">+12</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center">$79.95</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_3.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Tales of Vesperia</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-success mb-3 mr-1">Xbox One</span><span class="badge badge-warning mb-3">+12</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$29.95</del> <span class="ml-2 badge badge-danger">$19.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_4.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Persona 5</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-primary mb-3 mr-1">PS4</span><span class="badge badge-warning mb-3">+16</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$29.95</del> <span class="ml-2 badge badge-danger">$19.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_6.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Patapon 2 Remastered</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-primary mb-3 mr-1">PS4</span><span class="badge badge-success mb-3">+7</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center">$19.95</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="my-5">
+        GameStart - <a href="https://joseph222.web.app">Joseph Lee</a> - 2020
+    </footer>
+</body>
+
+</html>

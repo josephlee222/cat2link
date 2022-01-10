@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Information Development - Schedule</title>
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="page-paddings">
+        <!--Navbar and logo-->
+        <div class="logo-div">
+            <img src="./media/logo.jpeg" class="logo">
+            <h4 class="ml-8 logo-text">ITE Information Development Department</h4>
+        </div>
+
+        <nav class="navigation">
+            <a class="ml-16 nav-link" onclick="toPage('./index.html')">Home</a>
+            <a class="nav-link" onclick="toPage('./introduction.html')">Introduction</a>
+            <a class="nav-link active">Schedule</a>
+            <a class="nav-link" onclick="toPage('./contact.html')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="page-paddings content">
+        <section class="introductions-banner card">
+            <h1>Schedule</h1>
+            <p>Check on class timings</p>
+        </section>
+        <section class="schedules">
+            <aside class="card schedule-card mr-8">
+                <h3>Learn with us with these courses</h3>
+                <p>This is the timetable for part-time short courses that are avaliable<br><br>Some of the courses includes:</p>
+                <ul>
+                    <li>
+                        Web Applications
+                    </li>
+                    <li>
+                        Games Art & Design
+                    </li>
+                    <li>
+                        Electronics Computer Networking & Communications
+                    </li>
+                    <li>
+                        Broadcast & Media Technology
+                    </li>
+                </ul>
+            </aside>
+            <div class="schedule-card ml-8">
+                <a href="./media/course_schedule.jpeg"><img class="card schedule-img" src="./media/course_schedule.jpeg"></a>
+                <div class="card tooltip">
+                    <p>Click image to view full size</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        Code by Joseph Lee<br>Painfully coded with CSS & jQuery
+    </footer>
+</body>
+
+</html>

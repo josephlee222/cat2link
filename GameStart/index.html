@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GameStart - Home</title>
+    <meta name="description" content="Welcome to GameStart - The place for games">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon Stylesheet-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky-top bg-gray shadow">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md navbar-warning navbar-dark bg-gray">
+                <a class="navbar-brand d-flex align-items-center"><img src="./img/logo.png" alt="GameStart logo"></a>
+                <button data-toggle="collapse" data-target=".navigation" class="navbar-toggler"><span class="material-icons icon-btn mr-1 mx-auto d-flex align-self-center">menu</span></button>
+
+                <div class="collapse navbar-collapse navigation" id="navbar-div">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary mr-1 nav-btn"><span class="material-icons icon-btn mr-1">login</span>Login</button>
+                    <a class="btn btn-primary nav-btn" href="./registration.html"><span class="material-icons icon-btn mr-1">person_add</span>Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="carousel slide col-xl-12" data-ride="carousel" id="m-page-c">
+                <ol class="carousel-indicators">
+                    <li data-target="#m-page-c" data-slide-to="0" class="active"></li>
+                    <li data-target="#m-page-c" data-slide-to="1"></li>
+                    <li data-target="#m-page-c" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card c-card container-fluid">
+                            <div class="row">
+                                <img class="card-img-top c-img col-md-7 col-lg-6" src="img/c_1.png" alt="A Nintendo Switch Lite">
+                                <div class="card-body col-md-5 col-lg-6 c-card d-flex flex-column">
+                                    <h5>Nintendo Switch Lite now avaliable!</h5>
+                                    <p class="c-para">A smaller version of the Nintendo Switch is here! Introducing Nintendo Switch Lite with 3 different colours.</p>
+                                    <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#not-available-modal">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card c-card container-fluid">
+                            <div class="row">
+                                <img class="card-img-top c-img col-md-7 col-lg-6" src="img/c_2.png" alt="PS4 and PS4 Pro">
+                                <div class="card-body col-md-5 col-lg-6 d-flex flex-column">
+                                    <h5>Trade-in your used consoles</h5>
+                                    <p class="c-para">Trade in your game consoles to receive exclusive discounts when buying new consoles</p>
+                                    <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#not-available-modal">Start selling</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card c-card container-fluid">
+                            <div class="row">
+                                <img class="card-img-top c-img col-md-7 col-lg-6" src="img/c_3.png" alt="Collection of game covers">
+                                <div class="card-body col-md-5 col-lg-6 d-flex flex-column">
+                                    <h5>Browse our catalogue of games</h5>
+                                    <p class="c-para">Browse and purchase games from our online shop with titles ranging from latest releases to old classics.</p>
+                                    <a class="btn btn-primary mt-auto" href="./gallery.html">Visit E-Shop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-warning btn-lg quicklinks-btn" href="./gallery.html">Online Shop</a>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-danger btn-lg quicklinks-btn">Great Deals</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-success btn-lg quicklinks-btn">Blog</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h6 class="no-text-margin card-header-icon"><span class="material-icons header-icon mr-1">local_offer</span>Today's Deals</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_1.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Factorio</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-warning mb-3 mr-1">PC Platforms</span><span class="badge badge-warning mb-3">+12</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$26.00</del> <span class="ml-2 badge badge-danger">$20.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_2.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Attack On Titan 2</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-danger mb-3 mr-1">Nintendo Switch</span><span class="badge badge-danger mb-3">+18</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$79.95</del> <span class="ml-2 badge badge-danger">$59.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_3.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Tales Of Vesperia</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-success mb-3 mr-1">Xbox One</span><span class="badge badge-warning mb-3">+12</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$29.95</del> <span class="ml-2 badge badge-danger">$19.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-6 product-card margin-bottom-all">
+                                    <div class="card shadow container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xl-12 col-md-4 col-4 no-padding">
+                                                <img class="card-img-top no-padding product-image" src="img/product_4.png">
+                                            </div>
+                                            <div class="card-body col-sm-12 col-xl-12 col-md-8 col-8">
+                                                <h6 class="no-text-margin game-title">Persona 5</h6>
+                                                <div class="badge-scrollable">
+                                                    <span class="badge badge-primary mb-3 mr-1">PS4</span><span class="badge badge-warning mb-3">+16</span>
+                                                </div>
+                                                <p class="product-card-price no-text-margin d-flex align-items-center"><del>$29.95</del> <span class="ml-2 badge badge-danger">$19.95</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Model (Dialog) for pages not available-->
+    <div class="modal fade" id="not-available-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Not avaliable</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>This page is not avaliable</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="my-5">
+        GameStart - <a href="https://joseph222.web.app">Joseph Lee</a> - 2020
+    </footer>
+</body>
+
+</html>

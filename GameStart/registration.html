@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GameStart - Register</title>
+    <meta name="description" content="Register an account with GameStart">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon Stylesheet-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky-top bg-gray shadow">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md navbar-warning navbar-dark">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html"><img src="./img/logo.png" alt="GameStart logo"></a>
+                <button data-toggle="collapse" data-target=".navigation" class="navbar-toggler"><span class="material-icons icon-btn mr-1 mx-auto d-flex align-self-center">menu</span></button>
+
+                <div class="collapse navbar-collapse navigation" id="navbar-div">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary mr-1 nav-btn"><span class="material-icons icon-btn mr-1">login</span>Login</button>
+                    <a class="btn btn-primary nav-btn" href="./registration.html"><span class="material-icons icon-btn mr-1">person_add</span>Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1>Register</h1>
+            <p>To get exculsive features and benefits from us</p>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-12 mx-auto">
+                <div class="card fit-width">
+                    <div class="card-header">
+                        <h6 class="no-text-margin">Register with GameStart</h6>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="register-firstname">First name<span class="needed">*</span></label>
+                                        <input type="text" tabindex="1" required class="form-control" id="register-firstname" placeholder="First name">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="register-lastname">Last name<span class="needed">*</span></label>
+                                        <input type="text" tabindex="1" required class="form-control" id="register-lastname" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="register-email">E-mail Address<span class="needed">*</span></label>
+                                        <input type="email" tabindex="1" required class="form-control" id="register-email" placeholder="E-mail" aria-labelledby="email-help">
+                                        <small id="email-help" class="form-text text-muted">Ex. example@gamestart.com</small>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="register-phone">Phone number</label>
+                                        <input type="tel" tabindex="1" class="form-control" id="register-phone" placeholder="Phone" aria-labelledby="phone-help">
+                                        <small id="phone-help" class="form-text text-muted">Ex. +6597678754</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 form-group">
+                                        <label for="register-username">Username<span class="needed">*</span></label>
+                                        <input type="text" tabindex="1" required class="form-control" id="register-username" placeholder="Username" aria-labelledby="username-name">
+                                        <small id="username-help" class="form-text text-muted">Ex. Joseph222</small>
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label for="register-password">Password<span class="needed">*</span></label>
+                                        <input type="password" tabindex="1" required class="form-control" id="register-password" placeholder="Password" aria-labelledby="password-help">
+                                        <small id="password-help" class="form-text text-muted">At least 8 characters</small>
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label for="register-password-confirm">Confirm password<span class="needed">*</span></label>
+                                        <input type="password" tabindex="1" required class="form-control" id="register-password-confirm" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="register-address">Delivery address<span class="needed">*</span></label>
+                                        <input type="text" tabindex="1" required class="form-control" id="register-address" placeholder="Delivery Address" aria-labelledby="address-help">
+                                        <small id="address-help" class="form-text text-muted">For product delivery purposes<br>Ex. 2 Ang Mo Kio Dr, Singapore 567720</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button class="btn btn-outline-primary fit-width margin-bottom-md" tabindex="-1" type="reset">Reset form</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-primary fit-width" tabindex="2" type="submit">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        By registering, you agree to the <u>terms and conditions</u> as well as the <u>privacy policy</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="my-5">
+        GameStart - <a href="https://joseph222.web.app">Joseph Lee</a> - 2020
+    </footer>
+</body>
+
+</html>

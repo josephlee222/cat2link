@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    font-family: 'Signika', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+pre {
+    white-space: normal;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+button,
+.button {
+    border-radius: 5px;
+    background-color: #ff6961;
+    color: white;
+    transition-duration: 0.4s;
+    border: none;
+    padding: 0.5rem;
+}
+
+button:hover,
+.button:hover {
+    background-color: white;
+    color: #ff6961;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #ff6961;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    align-items: center;
+    transition: top 0.5s;
+    z-index: 1;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo-img {
+    width: 48px;
+    height: 36px;
+    filter: invert(1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo strong {
+    margin-left: 1rem;
+}
+
+.navigation-bundle {
+    padding-left: 4rem;
+    display: inline-flex;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+.navigation-link {
+    padding: 0.5rem 1rem;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.navigation-link:hover {
+    background-color: white;
+    color: #ff6961;
+}
+
+.splash {
+    background-color: #323232;
+    height: calc(100vh - 68px);
+    padding-top: 68px;
+    align-items: center;
+}
+
+.splash-div {
+    display: flex;
+    height: calc(100% - 36px);
+    align-items: center;
+}
+
+.scrolldown-div {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.scrolldown-div p {
+    margin: 0;
+}
+
+.scrolldown-div a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.splash-objects {
+    width: 50%;
+    display: inline-flex;
+    vertical-align: bottom;
+    margin-right: 1rem;
+}
+
+.splash-content {
+    color: white;
+    margin-left: 1rem;
+    width: 50%;
+}
+
+.splash-background {
+    position: absolute;
+    filter: invert(1);
+    opacity: 0.5;
+    width: 25vh;
+    height: 25vh;
+}
+
+.splash-background.image-1 {
+    left: 0;
+    top: 84px;
+}
+
+.dynamic-lang {
+    display: flex;
+    width: 250px;
+}
+
+.dynamic-lang p {
+    margin: 0;
+    height: 100%;
+}
+
+.hide-box {
+    position: absolute;
+    background-color: #ff6961;
+    width: 0px;
+    height: 39px;
+}
+
+.code-editor {
+    height: 225px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#code-sample {
+    transition-duration: 1s;
+}
+
+#code-description {
+    transition-duration: 1s;
+}
+
+.browser-circles {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.browser-code {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.splash-arrow {
+    filter: invert(1);
+    opacity: 0.5;
+    width: 24px;
+    height: 24px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    background-color: #ff6159;
+    margin-right: 0.5rem;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+    margin-right: 0.5rem;
+}
+
+.green {
+    background-color: #28c941;
+}
+
+.values {
+    height: 100vh;
+    background-color: #ff6961;
+    overflow: hidden;
+}
+
+.page-p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.values-title h1 {
+    margin-bottom: 0;
+    padding-top: 5%;
+}
+
+.values-title {
+    margin-bottom: 2rem;
+    color: #323232;
+}
+
+.values-background {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 0;
+    right: 0;
+    opacity: 0.25;
+    z-index: -1;
+    filter: invert(1);
+}
+
+.card-group {
+    display: flex;
+}
+
+.card.mission {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 100%;
+    background-color: #323232;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    position: relative;
+}
+
+.card h2 {
+    width: 80%;
+}
+
+.card-bg {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    filter: invert(1);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.conclusion {
+    height: 500px;
+    background-color: #323232;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+.conclusion-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.conclusion-content-box {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conclusion h1,
+.conclusion p {
+    color: white;
+}
+
+.p-left {
+    padding-left: 1rem;
+}
+
+.p-right {
+    padding-right: 1rem;
+}
+
+.m-left {
+    margin-left: 1rem;
+}
+
+.m-right {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1199px) {
+    .values {
+        height: 100%;
+        padding-bottom: 5rem;
+    }
+    .conclusion {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .card-group {
+        display: block;
+    }
+    .card.special {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .page-p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .card {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card h2,
+    .card p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .splash-div {
+        display: block;
+    }
+    .splash {
+        height: 100%;
+        padding-bottom: 3rem;
+    }
+    .splash-objects,
+    .splash-content {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .splash-content {
+        margin-left: 0;
+    }
+    .navigation-bundle {
+        display: none;
+    }
+    .mobile-navigation {
+        display: initial;
+        width: 75%;
+    }
+    .mobile-navigation .navigation-link {
+        float: right;
+        margin-right: 1rem;
+    }
+    .logo {
+        width: 25%;
+    }
+}

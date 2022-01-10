@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IAD Club | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the IAD Club offical webpage">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var coding_dict = {
+            "1": ["Javascript", "//Prints hello world<br>print('Hello world');<br><br>//Pops up a dialog<br>alert('Hello world');", "Javascript powers millions of webpages around the world everyday whenever you use the internet. learn how to level up your webpages with javascript!"],
+            "2": ["PHP", "//Prints hello world<br>echo 'Hello world';<br><br>//Gets a variable<br>$variable = 'Join us today!';", "PHP is a back-end programming language used by web developers to create fun and dynamic web pages. create interactivity with PHP!"],
+            "3": ["Python", "//Prints hello world<br>print('Hello world')<br><br>//Set a variable with input<br>variable = input('Whats your name?')", "Python is a trending language used by developers to analyse data and to represent it. Its also a popular language for desktop applications."],
+            "4": ["Swift", "//iOS Hello world<br><br>import UIKit<br>var myString = 'Hello, World!'<br>print(myString)<br>", "Swift is the programming language used by iOS developers to create apps for Apple products. Make beautiful apps with us using Swift!"]
+        }
+
+        var rotation = 1
+
+        function startRotation() {
+            setInterval(() => {
+                switch (rotation) {
+                    case 1:
+                    case 2:
+                    case 3:
+                        rotation++
+                        break
+                    case 4:
+                        rotation = 1
+                }
+                anime({
+                    targets: ".hide-box",
+                    width: "250px",
+                    duration: 1000,
+                    easing: "easeInOutExpo"
+                })
+                $("#code-sample").css("opacity", "0")
+                $("#code-description").css("opacity", "0")
+
+                setTimeout(function() {
+                    $("#code-language").html(coding_dict[rotation][0])
+                    $("#code-sample").html(coding_dict[rotation][1])
+                    $("#code-description").html(coding_dict[rotation][2])
+                    anime({
+                        targets: ".hide-box",
+                        width: "0px",
+                        duration: 1000,
+                        easing: "easeInOutExpo"
+                    })
+                    $("#code-sample").css("opacity", "1")
+                    $("#code-description").css("opacity", "1")
+                }, 1100)
+            }, 7500);
+        }
+
+        $(document).ready(function() {
+            AOS.init({
+                easing: 'ease-out-sine',
+                duration: 500
+            });
+
+            $(".card").hover(function() {
+                anime({
+                    targets: this,
+                    scale: 1.2
+                })
+                $(".card-bg", this).css("opacity", "0.5")
+            }, function() {
+                anime({
+                    targets: this,
+                    scale: 1
+                })
+                $(".card-bg", this).css("opacity", "0")
+            })
+            startRotation()
+        })
+
+        var previous_pos = window.pageYOffset
+
+        window.onscroll = function() {
+            var pos = window.pageYOffset
+            if (previous_pos > pos) {
+                document.getElementById("navigation").style.top = "0"
+            } else {
+                document.getElementById("navigation").style.top = "-68px"
+            }
+            previous_pos = pos
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation" id="navigation">
+            <div class="logo">
+                <img class="logo-img" src="./img/logo.png" alt="IAD Club logo">
+                <strong>IAD Club</strong>
+            </div>
+            <div class="navigation-bundle">
+                <a class="navigation-link">
+                    <p>Home</p>
+                </a>
+                <a class="navigation-link" href="about.html">
+                    <p>About Us</p>
+                </a>
+                <a class="navigation-link" href="resources.html">
+                    <p>Resources</p>
+                </a>
+                <a class="navigation-link" href="media.html">
+                    <p>Media</p>
+                </a>
+                <a class="navigation-link" href="contact.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="mobile-navigation">
+                <a class="navigation-link">
+                    <p>Menu</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="splash page-p">
+            <div class="splash-div">
+                <div class="splash-objects">
+                    <div class="code-editor">
+                        <div class="browser-circles">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                        </div>
+                        <div class="browser-code">
+                            <pre>
+                                <code id="code-sample">
+                                    //Prints hello world<br>
+                                    print('Hello world');<br><br>
+                                    
+                                    //Pops up a dialog<br>
+                                    alert('Hello world');
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="splash-content">
+                    <h1>Join IAD Club. Learn
+                        <div class="dynamic-lang">
+                            <div class="hide-box"></div>
+                            <p id="code-language">Javascript</p>
+                        </div>
+                    </h1>
+                    <p id="code-description">Javascript powers millions of webpages around the world everyday whenever you use the internet. learn how to level up your webpages with javascript!</p>
+                    <div class="banner-btns">
+                        <a class="button" href="#values">Learn more</a>
+                        <a class="button" href="./contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="values page-p" id="values">
+            <div class="values-title">
+                <h1>Our values and mission</h1>
+                <small>Our CCA values that we strive to serve</small>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="500">
+                <div class="card-group">
+                    <div class="card mission" id="card1">
+                        <h2>Our mission</h2>
+                        <p>Our mission is to be ITE's College Central most student centric CCA Club. This is what unites all IT Applications students and advisors as we strive to enrich, execute and dream the impossible and pursue the impossible.</p>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card m-right" id="card2">
+                        <h2>Cohesive Family Culture</h2>
+                        <p>Where Friends become Family. Cohesively care and look out for one another, so that no one is left behind. We speak freely with confidence, and others will listen with an open mind and heart. </p>
+                        <img class="card-bg" src="./img/group.png">
+                    </div>
+                    <div class="card special m-left m-right" id="card3">
+                        <h2>Zeal Of Heart</h2>
+                        <p>Every action always comes from our very own sincere heart and having passion in what we do. If it is not from the heart, it is nothing. </p>
+                        <img class="card-bg" src="./img/heart.png">
+                    </div>
+                    <div class="card special m-left" id="card4">
+                        <h2>Deeply rooted through all adversaries</h2>
+                        <p>As representatives of the club, we want to ensure that we stand firm to our objectives and not let others take us down for the sake of planning the best experience for our members even through the highs and lows. </p>
+                        <img class="card-bg" src="./img/tree.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrolldown-div">
+                <a href="#conclusion">
+                    <img src="./img/down.png" class="splash-arrow m-right" alt="Show more">
+                    <p>Learn more</p>
+                </a>
+            </div>
+            <img class="values-background" src="./img/info.png" alt="Infomation icon">
+        </div>
+        <div class="conclusion" id="conclusion" data-aos="fade-right">
+            <div class="conclusion-content" data-aos="fade-left" data-aos-delay="500">
+                <div class="conclusion-content-box">
+                    <h1>Find out more about us</h1>
+                    <p>Explore the unlimited possiblties with web and mobile applications!</p>
+                    <div class="conclusion-btns">
+                        <button>Our Actvities</button>
+                        <button>Apply CCA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
