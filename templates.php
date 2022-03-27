@@ -61,7 +61,7 @@ function big_title($title) {
     $html = '
     <div class="big-title d-flex align-items-center">
         <div class="v-divider-thick"></div>
-        <h1 class="ml-3"><strong>' . $title . '</strong></h1>
+        <h1 class="ml-3 mb-0"><strong>' . $title . '</strong></h1>
     </div>
     ';
     return $html;
