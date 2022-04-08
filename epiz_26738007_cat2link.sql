@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql313.epizy.com
--- Generation Time: Apr 06, 2022 at 12:08 AM
+-- Generation Time: Apr 08, 2022 at 12:40 AM
 -- Server version: 10.3.27-MariaDB
 -- PHP Version: 7.2.22
 
@@ -42,7 +42,7 @@ CREATE TABLE `profile` (
 --
 
 INSERT INTO `profile` (`id`, `ProfileName`, `ProfileDescription`, `ProfileProfileImage`, `WebsiteAbout`, `Timestamp`) VALUES
-(1, 'Joseph Lee', 'Hi, I am Joseph Lee. Since young I have been fascinated with technology and the internet as it provides us with a wealth of information that we can learn and study without the need of another person to teach.\r\n\r\nI started programming back in secondary 3 with the help of Scratch, a block-based game editor (https://scratch.mit.edu)\r\n\r\nThe current project list is not completed yet. I will add the rest of my projects at a later date\r\n', './img/Personal/profile.JPG', 'This website is developed with PHP and SQL to store the project information.\r\n\r\nThe website uses these tools:\r\n- Bootstrap for responsive design and grid system\r\n- IAD Project for website design (notice how it feels similar)', '2021-07-22 09:46:29');
+(1, 'Joseph Lee', 'Hi, I am Joseph Lee. Since young I have been fascinated with technology and the internet as it provides us with a wealth of information that we can learn and study without the need of another person to teach.\r\n\r\nI started programming back in secondary 3 with the help of Scratch, a block-based game editor (https://scratch.mit.edu)\r\n\r\nThe current project list is not completed yet. I will add the rest of my projects at a later date\r\n', './img/Personal/profile.webp', 'This website is developed with PHP and SQL to store the project information.\r\n\r\nThe website uses these tools:\r\n- Bootstrap for responsive design and grid system\r\n- IAD Project for website design (notice how it feels similar)', '2021-07-22 09:46:29');
 
 -- --------------------------------------------------------
 
@@ -77,7 +77,8 @@ INSERT INTO `Projects` (`id`, `ProjectName`, `ProjectShortName`, `ProjectDescrip
 (7, 'GameOn Website Prototype', 'GameOn', 'A website of a school games club (GameOn). This prototype focuses on the various aspects of user interface design to create a good website.\r\n\r\nYou can read the report on how this project is made', 'A website prototype for a school games club', 'UED PA1', './UED_PA1/UED_PA1.pdf', 'View Report', '{\r\n\"1\": \"./img/UED_PA1/1.webp\",\r\n\"2\": \"./img/UED_PA1/2.webp\"\r\n}', '2020'),
 (8, 'Bus Time Checker with LTA Datamall', 'Buschecker', 'A simple bus time checker using LTA APIs (LTA Datamall) that is able to display the arrival times in minutes and the bus operator that servicing the bus number.\r\n\r\nThis was my first project using PHP to display websites. The website design is almost identical to the GameStart project.', 'A simple bus time checker using LTA APIs', 'Website', './buschecker', 'View Website', '{\r\n\"1\": \"./img/buschecker/1.webp\",\r\n\"2\": \"./img/buschecker/2.webp\"\r\n}', '2020'),
 (9, 'ITE Info Tech Website', 'ITE Information Technology introduction website', 'Theme:\r\nITE Information Technology course introduction website\r\n\r\nBackground:\r\nThis is a simple website that showcases certain courses, gives a introduction to potential applicants and provide dates for the open house.\r\n\r\nThe website is made from scratch. No additional CSS frameworks except for jQuery to meet requirements', 'A simple introduction website for ITE Information Technology', 'IAD PA1', './ite_infocomm_tech', 'View Website', '{\r\n\"1\": \"./img/ite_infocomm/1.webp\",\r\n\"2\": \"./img/ite_infocomm/2.webp\",\r\n\"3\": \"./img/ite_infocomm/3.webp\",\r\n\"4\": \"./img/ite_infocomm/4.webp\"\r\n}', '2021'),
-(10, 'Singapore Visitor Counter and statistics (1978 - 1987)', 'Singapore Visitor statistics', 'This project takes the number of visitors that visited Singapore during a time period (Excel sheet) and display statistics from it.\r\n\r\nThe statistics generated are top 3 countries that visited Singapore and all countries sorted by number of visitors in descending order \r\n\r\nThe start year and end year is configurable. Feel free to download the source code and change the start and end year for different result!\r\n\r\nLibraries used:\r\n- Pandas: Lists calculation\r\n- matplotlib: Generate graphs\r\n', 'Singapore visitor stats graph generator in Python', 'ASP Project', 'https://github.com/josephlee222/ASP-Project/', 'View on Github', '{\r\n\"1\": \"./img/asp_project/1.webp\",\r\n\"2\": \"./img/asp_project/2.webp\"\r\n}', '2021');
+(10, 'Singapore Visitor Counter and statistics (1978 - 1987)', 'Singapore Visitor statistics', 'This project takes the number of visitors that visited Singapore during a time period (Excel sheet) and display statistics from it.\r\n\r\nThe statistics generated are top 3 countries that visited Singapore and all countries sorted by number of visitors in descending order \r\n\r\nThe start year and end year is configurable. Feel free to download the source code and change the start and end year for different result!\r\n\r\nLibraries used:\r\n- Pandas: Lists calculation\r\n- matplotlib: Generate graphs\r\n', 'Singapore visitor stats graph generator in Python', 'ASP Project', 'https://github.com/josephlee222/ASP-Project/', 'View on Github', '{\r\n\"1\": \"./img/asp_project/1.webp\",\r\n\"2\": \"./img/asp_project/2.webp\"\r\n}', '2021'),
+(11, 'Nerf blaster shop app (Kangaroo Shop)', 'Kangaroo Shop', 'Simple iOS storefront that sells Nerf and X-Shot blasters as well as darts. Built with XCode and Swift (Storyboard)\r\n\r\nFeatures:\r\n- View products and categories\r\n- Search by product name\r\n- Cart features (Add, Delete, Edit quantity, Delete All)\r\n- Checkout summary\r\n- Delivery Address features (Add address, Delete address, Edit, sort addresses by name or address location)\r\n- Recharge/Add credits (Virtual currency used in the app)\r\n- Edit account details (E-mail and password)\r\n- Dark/light modes\r\n', 'Simple iOS storefront that sells Nerf blasters.', 'MSD Project', 'https://github.com/josephlee222/NerfGunShop', 'View on Github', '{\r\n\"1\": \"./img/Kangaroo/1.webp\",\r\n\"2\": \"./img/Kangaroo/2.webp\",\r\n\"3\": \"./img/Kangaroo/3.webp\",\r\n\"4\": \"./img/Kangaroo/4.webp\",\r\n\"5\": \"./img/Kangaroo/5.webp\",\r\n\"6\": \"./img/Kangaroo/6.webp\",\r\n\"7\": \"./img/Kangaroo/7.webp\",\r\n\"8\": \"./img/Kangaroo/8.webp\",\r\n\"9\": \"./img/Kangaroo/9.webp\",\r\n\"10\": \"./img/Kangaroo/10.webp\",\r\n\"11\": \"./img/Kangaroo/11.webp\",\r\n\"12\": \"./img/Kangaroo/12.webp\",\r\n\"13\": \"./img/Kangaroo/13.webp\"\r\n}', '2022');
 
 --
 -- Indexes for dumped tables
@@ -109,7 +110,7 @@ ALTER TABLE `profile`
 -- AUTO_INCREMENT for table `Projects`
 --
 ALTER TABLE `Projects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
